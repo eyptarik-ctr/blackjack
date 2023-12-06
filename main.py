@@ -202,6 +202,12 @@ def StartGame():
                                 else:
                                     game_over21 = False
                                     break
+                        else:
+                            games_satatus = input("Plese type y or n \n--> ")
+                            if games_satatus == "y":
+                                StartGame()
+                            else:
+                                break
 
                     elif games_satatus == "n":
                         computer_cards_sum = computer_cards1 + computer_cards2 + computer_cards3 + computer_cards4 + computer_cards5
@@ -253,6 +259,12 @@ def StartGame():
                             else:
                                 game_over21 = False
                                 break
+                    else:
+                        games_satatus = input("Plese type y or n \n--> ")
+                        if games_satatus == "y":
+                            StartGame()
+                        else:
+                            break
 
                 elif games_satatus == "n":
                     computer_cards_sum = computer_cards1 + computer_cards2 + computer_cards3 + computer_cards4 + computer_cards5
@@ -303,6 +315,13 @@ def StartGame():
                         else:
                             game_over21 = False
                             break
+                else:
+                    games_satatus = input("Plese type y or n \n--> ")
+                    if games_satatus == "y":
+                        StartGame()
+                    else:
+                        break
+
 
 
             elif games_satatus == "n":
